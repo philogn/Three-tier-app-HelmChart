@@ -1,0 +1,4 @@
+image:
+  repository: redacted/three_tier_app/backend
+  tag: 8b629682
+  pullPolicy: Always
