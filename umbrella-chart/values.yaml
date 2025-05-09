@@ -1,0 +1,11 @@
+backend:
+  image:
+    repository: "{{ .Values.global.imageRegistry }}/three_tier_app/backend"
+    tag: 8b629682
+    pullPolicy: Always
+
+frontend:
+  image:
+    repository: "{{ .Values.global.imageRegistry }}/three_tier_app/frontend"
+    tag: 8b629682
+    pullPolicy: Always  
