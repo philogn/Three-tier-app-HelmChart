@@ -1,6 +1,5 @@
-mongodb:
-  image: mongo:4.4.6
-  username: ""
-  password: ""
-  storage: 1Gi
-  hostPath: ""
+image: mongo:4.4.6
+username: ""
+password: ""
+storage: 1Gi
+hostPath: ""

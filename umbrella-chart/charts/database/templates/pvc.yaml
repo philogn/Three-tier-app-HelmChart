@@ -8,4 +8,4 @@ spec:
   storageClassName: ""
   resources:
     requests:
-      storage: {{ .Values.mongodb.storage }}
+      storage: {{ .Values.storage }}

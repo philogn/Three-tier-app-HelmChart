@@ -4,9 +4,9 @@ metadata:
   name: mongo-pv
 spec:
   capacity: 
-    storage: {{ .Values.mongodb.storage }}
+    storage: {{ .Values.storage }}
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: {{ .Values.mongodb.hostPath | quote}}
+    path: {{ .Values.hostPath | quote}}

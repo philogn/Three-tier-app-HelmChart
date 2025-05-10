@@ -14,7 +14,7 @@ spec:
     spec: 
       containers:
         - name: mon
-          image: {{ .Values.mongodb.image }}
+          image: {{ .Values.image }}
           command:
             - "numactl"
             - "--interleave=all"
