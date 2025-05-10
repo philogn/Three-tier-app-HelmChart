@@ -1,20 +1,17 @@
 global:
   imageRegistry: ""
   host: ""
-
 backend:
   image:
     repository: "three_tier_app/backend"
-    tag: 8b629682
+    tag: 183f1c64
     pullPolicy: Always
-
 frontend:
   backend_url: ""
   image:
     repository: "three_tier_app/frontend"
-    tag: 8b629682
-    pullPolicy: Always  
-
+    tag: 183f1c64
+    pullPolicy: Always
 mongodb:
   image: mongo:4.4.6
   username: admin
