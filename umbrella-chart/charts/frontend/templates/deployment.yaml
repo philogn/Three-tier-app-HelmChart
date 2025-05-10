@@ -29,6 +29,6 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: REACT_APP_BACKEND_URL
-              value: "https://redacted/api/tasks"
+              value: "https://{{ .Values.backend_url }}/api/tasks"
           ports:
             - containerPort: 3000
