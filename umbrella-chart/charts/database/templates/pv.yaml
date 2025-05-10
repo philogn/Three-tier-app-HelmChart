@@ -9,4 +9,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: {{ .Values.mongodb.hostPath }}
+    path: {{ .Values.mongodb.hostPath | quote}}
