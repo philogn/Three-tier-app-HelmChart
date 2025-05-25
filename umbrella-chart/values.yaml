@@ -4,13 +4,13 @@ global:
 backend:
   image:
     repository: "three_tier_app/backend"
-    tag: 183f1c64
+    tag: e5c480b7
     pullPolicy: Always
 frontend:
   backend_url: ""
   image:
     repository: "three_tier_app/frontend"
-    tag: 183f1c64
+    tag: e5c480b7
     pullPolicy: Always
 mongodb:
   image: mongo:4.4.6
