@@ -32,7 +32,7 @@ te:
     tag: v1.7-dev-84ab418d
 beeshoes-backend:
   image:
-    tag: v2.8-dev-9d99c39d
+    tag: v2.9-dev-d49661b6
 beeshoes-frontend:
   image:
-    tag: v2.8-dev-9d99c39d
+    tag: v2.9-dev-d49661b6
