@@ -30,3 +30,9 @@ beeshoes-fro:
 te:
   image:
     tag: v1.7-dev-84ab418d
+beeshoes-backend:
+  image:
+    tag: v1.8-dev-a2649093
+beeshoes-frontend:
+  image:
+    tag: v1.8-dev-a2649093
