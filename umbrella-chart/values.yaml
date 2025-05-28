@@ -18,3 +18,15 @@ mongodb:
   password: password123
   storage: 1Gi
   hostPath: /data/db
+beeshoes-backe:
+  image:
+    tag: v1.7-dev-84ab418d
+d:
+  image:
+    tag: v1.7-dev-84ab418d
+beeshoes-fro:
+  image:
+    tag: v1.7-dev-84ab418d
+te:
+  image:
+    tag: v1.7-dev-84ab418d
