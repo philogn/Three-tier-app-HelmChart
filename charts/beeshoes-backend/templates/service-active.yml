@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: beeshoes-be-service-active
+  name: beeshoes-be-service
 spec:
   selector:
     app: beeshoes-be

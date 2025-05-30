@@ -1,5 +1,5 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Rollout
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: beeshoes-be
 spec:
@@ -8,10 +8,10 @@ spec:
     matchLabels:
       app: beeshoes-be
   strategy:
-    blueGreen:
-      activeService: beeshoes-be-service-active
-      previewService: beeshoes-be-service-preview
-      autoPromotionEnabled: false
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
   template:
     metadata:
       labels:
@@ -45,4 +45,3 @@ spec:
             name: beeshoes-be-application-properties-configmap
       imagePullSecrets:
         - name: {{ .Values.global.pullSecret }}
-
