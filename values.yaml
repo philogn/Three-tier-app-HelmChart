@@ -4,22 +4,19 @@ global:
   domain:
     frontend: "beeshoes.deploy.io.vn"
     backend: "api-beeshoes.deploy.io.vn"
-
 beeshoes-backend:
   image:
     repository: "beeshoes/beeshoes-backend"
-    tag: "v1"
+    tag: "v5.4-dev-e9348294"
   config:
     CLIENT_DOMAIN: "https://beeshoes.deploy.io.vn"
     REACT_APP_API_URL: "https://api-beeshoes.deploy.io.vn"
-
 beeshoes-frontend:
   image:
     repository: "beeshoes/beeshoes-frontend"
     tag: "v1"
-
 db:
-  initImage: 
+  initImage:
     repository: "beeshoes/beeshoes-db-init"
     tag: "v1"
   dbImage: bitnami/mariadb:11.4.7
