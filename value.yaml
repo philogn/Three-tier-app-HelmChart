@@ -1,0 +1,25 @@
+global:
+  imageRegistry: "harbor.deploy.io.vn"
+  pullSecret: "harbor-secret"
+  domain:
+    frontend: "beeshoes.deploy.io.vn"
+    backend: "api-beeshoes.deploy.io.vn"
+
+backend:
+  image:
+    repository: "beeshoes/beeshoes-backend"
+    tag: "v1"
+  config:
+    CLIENT_DOMAIN: "https://beeshoes.deploy.io.vn"
+    REACT_APP_API_URL: "https://api-beeshoes.deploy.io.vn"
+
+frontend:
+  image:
+    repository: "beeshoes/beeshoes-frontend"
+    tag: "v1"
+
+database:
+  initImage: 
+    repository: "beeshoes/beeshoes-db-init"
+    tag: "v1"
+  dbImage: bitnami/mariadb:11.4.7

@@ -1,5 +1,0 @@
-backend_url: ""
-image:
-  repository: ""
-  tag: ""
-  pullPolicy: IfNotPresent

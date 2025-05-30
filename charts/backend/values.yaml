@@ -1,0 +1,7 @@
+image:
+  repository: ""
+  tag: ""
+  pullSecret: ""
+config:
+  CLIENT_DOMAIN: ""
+  REACT_APP_API_URL: ""

@@ -1,5 +1,0 @@
-apiVersion: v2
-name: umbrella-chart
-version: 0.1.0
-description: A Helm chart that includes frontend and backend as subcharts
-type: application

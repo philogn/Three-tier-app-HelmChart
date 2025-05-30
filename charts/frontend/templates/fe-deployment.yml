@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beeshoes-fe
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: beeshoes-fe
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: beeshoes-fe
+    spec:
+      containers:
+        - name: beeshoes-fe
+          image: "{{ .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: 80
+              name: tcp
+              protocol: TCP
+          resources:
+            requests:
+              cpu: 250m
+              memory: 500Mi
+            limits:
+              cpu: 500m
+              memory: 1000Mi
+      imagePullSecrets:
+        - name: {{ .Values.global.pullSecret }}
+          
