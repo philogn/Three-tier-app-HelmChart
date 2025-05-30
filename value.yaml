@@ -5,7 +5,7 @@ global:
     frontend: "beeshoes.deploy.io.vn"
     backend: "api-beeshoes.deploy.io.vn"
 
-backend:
+beeshoes-backend:
   image:
     repository: "beeshoes/beeshoes-backend"
     tag: "v1"
@@ -13,12 +13,12 @@ backend:
     CLIENT_DOMAIN: "https://beeshoes.deploy.io.vn"
     REACT_APP_API_URL: "https://api-beeshoes.deploy.io.vn"
 
-frontend:
+beeshoes-frontend:
   image:
     repository: "beeshoes/beeshoes-frontend"
     tag: "v1"
 
-database:
+db:
   initImage: 
     repository: "beeshoes/beeshoes-db-init"
     tag: "v1"
