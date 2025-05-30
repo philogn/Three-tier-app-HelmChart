@@ -7,14 +7,14 @@ global:
 beeshoes-backend:
   image:
     repository: "beeshoes/beeshoes-backend"
-    tag: "v5.4-dev-e9348294"
+    tag: "v5.9-dev-6e2f6c6c"
   config:
     CLIENT_DOMAIN: "https://beeshoes.deploy.io.vn"
     REACT_APP_API_URL: "https://api-beeshoes.deploy.io.vn"
 beeshoes-frontend:
   image:
     repository: "beeshoes/beeshoes-frontend"
-    tag: "v1"
+    tag: "v5.9-dev-6e2f6c6c"
 db:
   initImage:
     repository: "beeshoes/beeshoes-db-init"
