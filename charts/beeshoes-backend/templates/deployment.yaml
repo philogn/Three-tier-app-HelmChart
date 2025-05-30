@@ -8,10 +8,10 @@ spec:
     matchLabels:
       app: beeshoes-be
   strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
+    blueGreen:
+      activeService: beeshoes-be-service-active
+      previewService: beeshoes-be-service-preview
+      autoPromotionEnabled: false
   template:
     metadata:
       labels:
@@ -45,3 +45,4 @@ spec:
             name: beeshoes-be-application-properties-configmap
       imagePullSecrets:
         - name: {{ .Values.global.pullSecret }}
+
